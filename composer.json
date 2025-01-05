@@ -1,5 +1,5 @@
 {
-    "name": "behamin/service-proxy",
+    "name": "ehsandevs/service-proxy",
     "description": "for proxy or sending requests to other services with useful utilities",
     "keywords": [
         "behamin",
@@ -47,21 +47,21 @@
     "prefer-stable": true,
     "autoload": {
         "psr-4": {
-            "Behamin\\ServiceProxy\\": "src/"
+            "Ehsandevs\\ServiceProxy\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Behamin\\ServiceProxy\\Tests\\": "tests/"
+            "Ehsandevs\\ServiceProxy\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Behamin\\ServiceProxy\\Providers\\ProxyServiceProvider"
+                "Ehsandevs\\ServiceProxy\\Providers\\ProxyServiceProvider"
             ],
             "aliases": {
-                "Proxy": "Behamin\\ServiceProxy\\Proxy"
+                "Proxy": "Ehsandevs\\ServiceProxy\\Proxy"
             }
         }
     }
