@@ -1,8 +1,8 @@
 <?php
 
-namespace Behamin\ServiceProxy\Exceptions;
+namespace Ehsandevs\ServiceProxy\Exceptions;
 
-use Behamin\ServiceProxy\Responses\ProxyResponse;
+use Ehsandevs\ServiceProxy\Responses\ProxyResponse;
 use Illuminate\Http\Client\HttpClientException;
 use Illuminate\Http\Client\Response;
 use Illuminate\Http\JsonResponse;

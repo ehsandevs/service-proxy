@@ -1,8 +1,8 @@
 <?php
 
-namespace Behamin\ServiceProxy;
+namespace Ehsandevs\ServiceProxy;
 
-use Behamin\ServiceProxy\Responses\ProxyResponse;
+use Ehsandevs\ServiceProxy\Responses\ProxyResponse;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Http\Client\ResponseSequence;
 use Illuminate\Http\Request;

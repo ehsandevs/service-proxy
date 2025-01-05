@@ -1,9 +1,9 @@
 <?php
 
-namespace Behamin\ServiceProxy;
+namespace Ehsandevs\ServiceProxy;
 
-use Behamin\ServiceProxy\Requests\PendingRequest;
-use Behamin\ServiceProxy\Responses\ProxyResponse;
+use Ehsandevs\ServiceProxy\Requests\PendingRequest;
+use Ehsandevs\ServiceProxy\Responses\ProxyResponse;
 use Illuminate\Http\Client\Factory;
 use Illuminate\Http\Request;
 use Illuminate\Support\Arr;
@@ -12,7 +12,7 @@ use ReflectionObject;
 
 /**
  * Class Http
- * @package Behamin\ServiceProxy
+ * @package Ehsandevs\ServiceProxy
  *
  * @method PendingRequest accept(string $contentType)
  * @method PendingRequest acceptJson()

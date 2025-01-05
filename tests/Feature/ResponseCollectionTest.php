@@ -1,9 +1,9 @@
 <?php
 
-namespace Behamin\ServiceProxy\Tests\Feature;
+namespace Ehsandevs\ServiceProxy\Tests\Feature;
 
-use Behamin\ServiceProxy\Proxy;
-use Behamin\ServiceProxy\Tests\TestCase;
+use Ehsandevs\ServiceProxy\Proxy;
+use Ehsandevs\ServiceProxy\Tests\TestCase;
 use Illuminate\Support\Facades\Http;
 
 class ResponseCollectionTest extends TestCase

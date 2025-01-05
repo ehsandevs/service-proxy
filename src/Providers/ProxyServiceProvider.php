@@ -1,6 +1,6 @@
 <?php
 
-namespace Behamin\ServiceProxy\Providers;
+namespace Ehsandevs\ServiceProxy\Providers;
 
 use Illuminate\Support\ServiceProvider;
 

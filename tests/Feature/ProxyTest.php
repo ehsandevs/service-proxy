@@ -1,11 +1,11 @@
 <?php
 
-namespace Behamin\ServiceProxy\Tests\Feature;
+namespace Ehsandevs\ServiceProxy\Tests\Feature;
 
-use Behamin\ServiceProxy\Exceptions\ProxyException;
-use Behamin\ServiceProxy\Proxy;
-use Behamin\ServiceProxy\Responses\ProxyResponse;
-use Behamin\ServiceProxy\Tests\TestCase;
+use Ehsandevs\ServiceProxy\Exceptions\ProxyException;
+use Ehsandevs\ServiceProxy\Proxy;
+use Ehsandevs\ServiceProxy\Responses\ProxyResponse;
+use Ehsandevs\ServiceProxy\Tests\TestCase;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 

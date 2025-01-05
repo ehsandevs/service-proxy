@@ -1,9 +1,9 @@
 <?php
 
-namespace Behamin\ServiceProxy\Responses;
+namespace Ehsandevs\ServiceProxy\Responses;
 
 use ArrayAccess;
-use Behamin\ServiceProxy\Exceptions\ProxyException;
+use Ehsandevs\ServiceProxy\Exceptions\ProxyException;
 use Closure;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Support\Jsonable;

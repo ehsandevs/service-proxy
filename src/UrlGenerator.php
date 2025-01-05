@@ -1,6 +1,6 @@
 <?php
 
-namespace Behamin\ServiceProxy;
+namespace Ehsandevs\ServiceProxy;
 
 use InvalidArgumentException;
 

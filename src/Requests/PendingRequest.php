@@ -1,10 +1,10 @@
 <?php
 
-namespace Behamin\ServiceProxy\Requests;
+namespace Ehsandevs\ServiceProxy\Requests;
 
-use Behamin\ServiceProxy\Http;
-use Behamin\ServiceProxy\Responses\ProxyResponse;
-use Behamin\ServiceProxy\UrlGenerator;
+use Ehsandevs\ServiceProxy\Http;
+use Ehsandevs\ServiceProxy\Responses\ProxyResponse;
+use Ehsandevs\ServiceProxy\UrlGenerator;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Exception\TransferException;
 use GuzzleHttp\Promise\PromiseInterface;

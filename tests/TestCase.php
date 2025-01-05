@@ -1,6 +1,6 @@
 <?php
 
-namespace Behamin\ServiceProxy\Tests;
+namespace Ehsandevs\ServiceProxy\Tests;
 
 class TestCase extends \Orchestra\Testbench\TestCase
 {
