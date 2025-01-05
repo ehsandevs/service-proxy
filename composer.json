@@ -16,7 +16,7 @@
         "ext-json": "*",
         "laravel/framework": "^7.0 || ^8.0 || ^9.0 || ^10.0 || ^11.0",
         "guzzlehttp/guzzle": "^7.0",
-        "behamin/bresources": "^1.5 || ^2.2"
+        "ehsandevs/bresources": "^1.5 || ^2.2 || ^2.4"
     },
     "scripts": {
         "test": "phpunit --color=always"
