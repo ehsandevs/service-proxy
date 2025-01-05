@@ -99,17 +99,28 @@ class PendingRequest extends HttpPendingRequest
         $this->withHeaders(config('proxy.global_headers', []));
     }
 
-    protected function makePromise(string $method, string $url, array $options = []): PromiseInterface
+    protected function makePromise(string $method, string $url, array $options = [], int $attempt = 1)
     {
         return $this->promise = $this->sendRequest($method, $url, $options)
             ->then(function (MessageInterface $message) {
-                return new ProxyResponse(tap(new Response($message), function ($response) {
+                return tap($this->newResponse($message), function ($response) {
                     $this->populateResponse($response);
                     $this->dispatchResponseReceivedEvent($response);
-                }));
+                });
             })
-            ->otherwise(function (TransferException $e) {
-                return $e instanceof RequestException ? $this->populateResponse(new Response($e->getResponse())) : $e;
+            ->otherwise(function (OutOfBoundsException|TransferException $e) {
+                if ($e instanceof ConnectException || ($e instanceof RequestException && ! $e->hasResponse())) {
+                    $exception = new ConnectionException($e->getMessage(), 0, $e);
+
+                    $this->dispatchConnectionFailedEvent(new Request($e->getRequest()), $exception);
+
+                    return $exception;
+                }
+
+                return $e instanceof RequestException && $e->hasResponse() ? $this->populateResponse($this->newResponse($e->getResponse())) : $e;
+            })
+            ->then(function (Response|ConnectionException|TransferException $response) use ($method, $url, $options, $attempt) {
+                return $this->handlePromiseResponse($response, $method, $url, $options, $attempt);
             });
     }
 
